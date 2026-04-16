@@ -14,8 +14,8 @@ public class Gerente extends Funcionario{
     }
 
     private void setBonus(double bonus) {
-        if (bonus =< 0) throw new IllegalArgumentException("O bonus deve ser maior que 0");
-        if (bonus > 100) throw new IllegalArgumentException("O bonus deve ser menor ou igual a 1");
+        if (bonus <= 0) throw new IllegalArgumentException("O bonus deve ser maior que 0");
+        if (bonus > 1) throw new IllegalArgumentException("O bonus deve ser menor ou igual a 1");
         this.bonus = bonus;
     }
 }

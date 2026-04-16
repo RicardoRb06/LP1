@@ -2,20 +2,22 @@ package Lista02_HerancaPolimorfismo.Q2;
 
 public class Diretor extends Funcionario{
 
-    private double bonus;
+    private double taxaParticipacao;
+    private double lucroMensalEmpresa;
 
-    public Gerente(double salarioMensal, double bonus) {
+    public Diretor(double salarioMensal, double taxaParticipacao, double lucroMensalEmpresa) {
         super(salarioMensal);
-        this.setBonus(bonus);
+        this.setTaxaParticipacao(taxaParticipacao);
+        this.lucroMensalEmpresa = lucroMensalEmpresa;
     }
 
-    public double calcularPagamento(double lucroMensalEmpresa) {
-        return salarioMensal + (lucroMensalEmpresa * bonus);
+    public double calcularPagamento() {
+        return salarioMensal + (lucroMensalEmpresa * taxaParticipacao);
     }
 
-    private void setBonus(double bonus) {
-        if (bonus =< 0) throw new IllegalArgumentException("O bonus deve ser maior que 0");
-        if (bonus > 100) throw new IllegalArgumentException("O bonus deve ser menor ou igual a 1");
-        this.bonus = bonus;
+    private void setTaxaParticipacao(double taxaParticipacao) {
+        if (taxaParticipacao <= 0) throw new IllegalArgumentException("O bonus deve ser maior que 0");
+        if (taxaParticipacao > 1) throw new IllegalArgumentException("O bonus deve ser menor ou igual a 1");
+        this.taxaParticipacao = taxaParticipacao;
     }
 }
