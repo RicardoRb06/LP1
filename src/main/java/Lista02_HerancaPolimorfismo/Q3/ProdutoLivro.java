@@ -8,6 +8,6 @@ public class ProdutoLivro extends Produto{
 
     @Override
     public double calcularPrecoDesconto() {
-        return this.preco - this.preco * 0.5;
+        return this.preco - this.preco * 0.05;
     }
 }
