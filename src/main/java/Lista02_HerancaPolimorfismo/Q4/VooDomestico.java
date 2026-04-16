@@ -2,7 +2,7 @@ package Lista02_HerancaPolimorfismo.Q4;
 
 public class VooDomestico extends Voo{
 
-    private final double fatorPreco = 1000;
+    private final double fatorPreco = 1.25;
 
     public VooDomestico(String origem, String destino, double distancia) {
         super(origem, destino, distancia);
