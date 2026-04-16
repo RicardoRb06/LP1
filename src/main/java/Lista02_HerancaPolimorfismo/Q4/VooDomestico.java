@@ -14,6 +14,6 @@ public class VooDomestico extends Voo{
 
     @Override
     public double calcularPreco() {
-        return this.fatorPreco * this * distancia;
+        return this.fatorPreco * this.distancia;
     }
 }

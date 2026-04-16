@@ -1,6 +1,6 @@
 package Lista02_HerancaPolimorfismo.Q4;
 
-public class VooInternacional {
+public class VooInternacional extends Voo{
 
     private final double fatorPreco = 0.5;
 
@@ -14,6 +14,6 @@ public class VooInternacional {
 
     @Override
     public double calcularPreco() {
-        return this.fatorPreco * this * distancia;
+        return this.fatorPreco * this.distancia;
     }
 }
