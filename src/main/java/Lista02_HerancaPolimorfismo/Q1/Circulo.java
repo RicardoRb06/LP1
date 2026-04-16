@@ -4,11 +4,15 @@ public class Circulo extends FormaGeometrica{
 
     private double raio;
 
+    public Circulo(double raio) {
+        this.raio = raio;
+    }
+
     public double calcularPerimetro() {
-        return 2 * Math.PI * this.raio;
+        return 2 * 3.14 * this.raio;
     }
 
     public double calcularArea() {
-        return Math.PI * Math.pow(this.raio, 2);
+        return 3.14 * Math.pow(this.raio, 2);
     }
 }
