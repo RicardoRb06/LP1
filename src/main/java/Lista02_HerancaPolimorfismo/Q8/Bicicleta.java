@@ -1,12 +1,12 @@
 package Lista02_HerancaPolimorfismo.Q8;
 
-public class Moto extends Veiculo{
-    public Moto(String marca, String modelo, int preco) {
+public class Bicicleta extends Veiculo{
+    public Bicicleta(String marca, String modelo, int preco) {
         super(marca, modelo, preco);
     }
 
     @Override
     public float getFator() {
-        return 1.15f;
+        return 1.05f;
     }
 }
